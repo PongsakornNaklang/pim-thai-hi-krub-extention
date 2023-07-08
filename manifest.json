@@ -1,0 +1,27 @@
+{
+    "manifest_version": 2,
+    "name": "Pim Thai Hi Krub",
+    "version": "1.0",
+    "description": "โปรดกดปุ่มนี้ เมื่อคุณลืมเปลียนภาษาคีย์บอร์ด",
+    "author": {
+        "email": "pongsakornnaklang@gmail.com"
+    },
+    "icons": {
+        "16": "logo.png",
+        "48": "logo.png",
+        "128": "logo.png"
+    },
+    "permissions": [
+        "tabs",
+        "activeTab"
+    ],
+    "content_scripts": [{
+        "matches": [
+            "<all_urls>"
+        ],
+        "js": [
+            "content.js"
+        ]
+    }],
+    "web_accessible_resources": ["logo.png"]
+}
